@@ -7516,7 +7516,28 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Some-safe">Some safe<a class="anchor-link" href="#Some-safe">¶</a></h1>
+<h1 id="Data-science-safe-home">Data science safe home<a class="anchor-link" href="#Data-science-safe-home">¶</a></h1><p>Is there?</p>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/><a href="#Introduction">Chapter 1: Introduction </a></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/><a href="#a-crash-course-in-python">Chapter 2: A Crash Course in Python </a></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Chapter 3: Visualizing Data</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Chapter 4: Linear Algebra</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Chapter 5: Statistics</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Chapter 6: Probability</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Chapter 7: Hypothesis and Inference</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Chapter 8: Gradient Descent</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7528,7 +7549,54 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"You good ?"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">##########################</span>
+<span class="c1">#                        #</span>
+<span class="c1"># FINDING KEY CONNECTORS #</span>
+<span class="c1">#                        #</span>
+<span class="c1">##########################</span>
+
+<span class="n">users</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Hero"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Dunn"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Sue"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Chi"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Thor"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Clive"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Hicks"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Devin"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Kate"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Klein"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">"id"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Jen"</span> <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="n">friendships</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+               <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">)]</span>
+
+
+<span class="c1"># first give each user an empty list</span>
+<span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+    <span class="n">user</span><span class="p">[</span><span class="s2">"friends"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># and then populate the lists with friendships</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">friendships</span><span class="p">:</span>
+    <span class="c1"># this works because users[i] is the user whose id is i</span>
+    <span class="n">users</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">"friends"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">users</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="c1"># add i as a friend of j</span>
+    <span class="n">users</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="s2">"friends"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">users</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="c1"># add j as a friend of i</span>
+
+<span class="k">def</span> <span class="nf">number_of_friends</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""how many friends does _user_ have?"""</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="s2">"friends"</span><span class="p">])</span> <span class="c1"># length of friend_ids list</span>
+
+<span class="n">total_connections</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">number_of_friends</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">)</span> <span class="c1"># 24</span>
+
+<span class="n">num_users</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+<span class="n">avg_connections</span> <span class="o">=</span> <span class="n">total_connections</span> <span class="o">/</span> <span class="n">num_users</span> <span class="c1"># 2.4</span>
+
+<span class="c1"># print all variables</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">total_connections</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_users</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">avg_connections</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7541,9 +7609,212 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>You good ?
+<pre>24
+11
+2.1818181818181817
 </pre>
 </div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">################################</span>
+<span class="c1">#                              #</span>
+<span class="c1"># DATA SCIENTISTS YOU MAY KNOW #</span>
+<span class="c1">#                              #</span>
+<span class="c1">################################</span>
+
+<span class="k">def</span> <span class="nf">friends_of_friend_ids_bad</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+    <span class="c1"># "foaf" is short for "friend of a friend"</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">foaf</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">friend</span> <span class="ow">in</span> <span class="n">user</span><span class="p">[</span><span class="s2">"friends"</span><span class="p">]</span> <span class="c1"># for each of user's friends</span>
+            <span class="k">for</span> <span class="n">foaf</span> <span class="ow">in</span> <span class="n">friend</span><span class="p">[</span><span class="s2">"friends"</span><span class="p">]]</span> <span class="c1"># get each of _their_ friends</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span> <span class="c1"># not loaded by default</span>
+
+<span class="k">def</span> <span class="nf">not_the_same</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">other_user</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""two users are not the same if they have different ids"""</span>
+    <span class="k">return</span> <span class="n">user</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">!=</span> <span class="n">other_user</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">not_friends</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">other_user</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""other_user is not a friend if he's not in user["friends"];</span>
+<span class="sd">    that is, if he's not_the_same as all the people in user["friends"]"""</span>
+    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">not_the_same</span><span class="p">(</span><span class="n">friend</span><span class="p">,</span> <span class="n">other_user</span><span class="p">)</span>
+               <span class="k">for</span> <span class="n">friend</span> <span class="ow">in</span> <span class="n">user</span><span class="p">[</span><span class="s2">"friends"</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">friends_of_friend_ids</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">Counter</span><span class="p">(</span><span class="n">foaf</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span>
+                   <span class="k">for</span> <span class="n">friend</span> <span class="ow">in</span> <span class="n">user</span><span class="p">[</span><span class="s2">"friends"</span><span class="p">]</span>  <span class="c1"># for each of my friends</span>
+                   <span class="k">for</span> <span class="n">foaf</span> <span class="ow">in</span> <span class="n">friend</span><span class="p">[</span><span class="s2">"friends"</span><span class="p">]</span>  <span class="c1"># count *their* friends</span>
+                   <span class="k">if</span> <span class="n">not_the_same</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">foaf</span><span class="p">)</span>    <span class="c1"># who aren't me</span>
+                   <span class="ow">and</span> <span class="n">not_friends</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">foaf</span><span class="p">))</span>   <span class="c1"># and aren't my friends</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">friends_of_friend_ids</span><span class="p">(</span><span class="n">users</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span> <span class="c1"># Counter({0: 2, 5: 1})</span>
+
+<span class="n">interests</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"Hadoop"</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"Big Data"</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"HBase"</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"Spark"</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"Storm"</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"Cassandra"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"NoSQL"</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"MongoDB"</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"Cassandra"</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"HBase"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"Postgres"</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">"Python"</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">"scikit-learn"</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">"scipy"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">"numpy"</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">"statsmodels"</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">"pandas"</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">"R"</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">"Python"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">"statistics"</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">"regression"</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">"probability"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">"machine learning"</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">"regression"</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">"decision trees"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">"libsvm"</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"Python"</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"R"</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"C++"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"Haskell"</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"programming languages"</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s2">"statistics"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s2">"probability"</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s2">"mathematics"</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s2">"theory"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="s2">"machine learning"</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="s2">"scikit-learn"</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="s2">"Mahout"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="s2">"neural networks"</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s2">"neural networks"</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s2">"deep learning"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s2">"Big Data"</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s2">"artificial intelligence"</span><span class="p">),</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="s2">"Hadoop"</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">),</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="s2">"MapReduce"</span><span class="p">),</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="s2">"Big Data"</span><span class="p">)</span>
+<span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">data_scientists_who_like</span><span class="p">(</span><span class="n">target_interest</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">user_id</span>
+            <span class="k">for</span> <span class="n">user_id</span><span class="p">,</span> <span class="n">user_interest</span> <span class="ow">in</span> <span class="n">interests</span>
+            <span class="k">if</span> <span class="n">user_interest</span> <span class="o">==</span> <span class="n">target_interest</span><span class="p">]</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+
+<span class="c1"># keys are interests, values are lists of user_ids with that interest</span>
+<span class="n">user_ids_by_interest</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">user_id</span><span class="p">,</span> <span class="n">interest</span> <span class="ow">in</span> <span class="n">interests</span><span class="p">:</span>
+    <span class="n">user_ids_by_interest</span><span class="p">[</span><span class="n">interest</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+
+<span class="c1"># keys are user_ids, values are lists of interests for that user_id</span>
+<span class="n">interests_by_user_id</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">user_id</span><span class="p">,</span> <span class="n">interest</span> <span class="ow">in</span> <span class="n">interests</span><span class="p">:</span>
+    <span class="n">interests_by_user_id</span><span class="p">[</span><span class="n">user_id</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">interest</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">most_common_interests_with</span><span class="p">(</span><span class="n">user_id</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">Counter</span><span class="p">(</span><span class="n">interested_user_id</span>
+        <span class="k">for</span> <span class="n">interest</span> <span class="ow">in</span> <span class="n">interests_by_user_id</span><span class="p">[</span><span class="s2">"user_id"</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">interested_user_id</span> <span class="ow">in</span> <span class="n">user_ids_by_interest</span><span class="p">[</span><span class="n">interest</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">interested_user_id</span> <span class="o">!=</span> <span class="n">user_id</span><span class="p">)</span>
+
+<span class="c1"># print all variables</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">user_ids_by_interest</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">interests_by_user_id</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">most_common_interests_with</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Counter({0: 2, 5: 1})
+defaultdict(&lt;class 'list'&gt;, {'Hadoop': [0, 9], 'Big Data': [0, 8, 9], 'HBase': [0, 1], 'Java': [0, 5, 9], 'Spark': [0], 'Storm': [0], 'Cassandra': [0, 1], 'NoSQL': [1], 'MongoDB': [1], 'Postgres': [1], 'Python': [2, 3, 5], 'scikit-learn': [2, 7], 'scipy': [2], 'numpy': [2], 'statsmodels': [2], 'pandas': [2], 'R': [3, 5], 'statistics': [3, 6], 'regression': [3, 4], 'probability': [3, 6], 'machine learning': [4, 7], 'decision trees': [4], 'libsvm': [4], 'C++': [5], 'Haskell': [5], 'programming languages': [5], 'mathematics': [6], 'theory': [6], 'Mahout': [7], 'neural networks': [7, 8], 'deep learning': [8], 'artificial intelligence': [8], 'MapReduce': [9]})
+defaultdict(&lt;class 'list'&gt;, {0: ['Hadoop', 'Big Data', 'HBase', 'Java', 'Spark', 'Storm', 'Cassandra'], 1: ['NoSQL', 'MongoDB', 'Cassandra', 'HBase', 'Postgres'], 2: ['Python', 'scikit-learn', 'scipy', 'numpy', 'statsmodels', 'pandas'], 3: ['R', 'Python', 'statistics', 'regression', 'probability'], 4: ['machine learning', 'regression', 'decision trees', 'libsvm'], 5: ['Python', 'R', 'Java', 'C++', 'Haskell', 'programming languages'], 6: ['statistics', 'probability', 'mathematics', 'theory'], 7: ['machine learning', 'scikit-learn', 'Mahout', 'neural networks'], 8: ['neural networks', 'deep learning', 'Big Data', 'artificial intelligence'], 9: ['Hadoop', 'Java', 'MapReduce', 'Big Data']})
+Counter()
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">###########################</span>
+<span class="c1">#                         #</span>
+<span class="c1"># SALARIES AND EXPERIENCE #</span>
+<span class="c1">#                         #</span>
+<span class="c1">###########################</span>
+
+<span class="n">salaries_and_tenures</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">83000</span><span class="p">,</span> <span class="mf">8.7</span><span class="p">),</span> <span class="p">(</span><span class="mi">88000</span><span class="p">,</span> <span class="mf">8.1</span><span class="p">),</span>
+                        <span class="p">(</span><span class="mi">48000</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">),</span> <span class="p">(</span><span class="mi">76000</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
+                        <span class="p">(</span><span class="mi">69000</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">),</span> <span class="p">(</span><span class="mi">76000</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">),</span>
+                        <span class="p">(</span><span class="mi">60000</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">),</span> <span class="p">(</span><span class="mi">83000</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+                        <span class="p">(</span><span class="mi">48000</span><span class="p">,</span> <span class="mf">1.9</span><span class="p">),</span> <span class="p">(</span><span class="mi">63000</span><span class="p">,</span> <span class="mf">4.2</span><span class="p">)]</span>
+
+<span class="k">def</span> <span class="nf">make_chart_salaries_by_tenure</span><span class="p">():</span>
+    <span class="n">tenures</span> <span class="o">=</span> <span class="p">[</span><span class="n">tenure</span> <span class="k">for</span> <span class="n">salary</span><span class="p">,</span> <span class="n">tenure</span> <span class="ow">in</span> <span class="n">salaries_and_tenures</span><span class="p">]</span>
+    <span class="n">salaries</span> <span class="o">=</span> <span class="p">[</span><span class="n">salary</span> <span class="k">for</span> <span class="n">salary</span><span class="p">,</span> <span class="n">tenure</span> <span class="ow">in</span> <span class="n">salaries_and_tenures</span><span class="p">]</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">tenures</span><span class="p">,</span> <span class="n">salaries</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Years Experience"</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Salary"</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># keys are years</span>
+<span class="c1"># values are the salaries for each tenure</span>
+<span class="n">salary_by_tenure</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">salary</span><span class="p">,</span> <span class="n">tenure</span> <span class="ow">in</span> <span class="n">salaries_and_tenures</span><span class="p">:</span>
+    <span class="n">salary_by_tenure</span><span class="p">[</span><span class="n">tenure</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span>
+
+<span class="n">average_salary_by_tenure</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">tenure</span> <span class="p">:</span> <span class="nb">sum</span><span class="p">(</span><span class="n">salaries</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">salaries</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">tenure</span><span class="p">,</span> <span class="n">salaries</span> <span class="ow">in</span> <span class="n">salary_by_tenure</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">tenure_bucket</span><span class="p">(</span><span class="n">tenure</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">tenure</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span> <span class="k">return</span> <span class="s2">"less than two"</span>
+    <span class="k">elif</span> <span class="n">tenure</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span> <span class="k">return</span> <span class="s2">"between two and five"</span>
+    <span class="k">else</span><span class="p">:</span> <span class="k">return</span> <span class="s2">"more than five"</span>
+
+<span class="n">salary_by_tenure_bucket</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">salary</span><span class="p">,</span> <span class="n">tenure</span> <span class="ow">in</span> <span class="n">salaries_and_tenures</span><span class="p">:</span>
+    <span class="n">bucket</span> <span class="o">=</span> <span class="n">tenure_bucket</span><span class="p">(</span><span class="n">tenure</span><span class="p">)</span>
+    <span class="n">salary_by_tenure_bucket</span><span class="p">[</span><span class="n">bucket</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span>
+
+<span class="n">average_salary_by_bucket</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">tenure_bucket</span> <span class="p">:</span> <span class="nb">sum</span><span class="p">(</span><span class="n">salaries</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">salaries</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">tenure_bucket</span><span class="p">,</span> <span class="n">salaries</span> <span class="ow">in</span> <span class="n">salary_by_tenure_bucket</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="c1"># print all variables</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">salary_by_tenure</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">average_salary_by_tenure</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">salary_by_tenure_bucket</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">average_salary_by_bucket</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>defaultdict(&lt;class 'list'&gt;, {8.7: [83000], 8.1: [88000], 0.7: [48000], 6: [76000], 6.5: [69000], 7.5: [76000], 2.5: [60000], 10: [83000], 1.9: [48000], 4.2: [63000]})
+{8.7: 83000.0, 8.1: 88000.0, 0.7: 48000.0, 6: 76000.0, 6.5: 69000.0, 7.5: 76000.0, 2.5: 60000.0, 10: 83000.0, 1.9: 48000.0, 4.2: 63000.0}
+defaultdict(&lt;class 'list'&gt;, {'more than five': [83000, 88000, 76000, 69000, 76000, 83000], 'less than two': [48000, 48000], 'between two and five': [60000, 63000]})
+{'more than five': 79166.66666666667, 'less than two': 48000.0, 'between two and five': 61500.0}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="A-Crash-Course-in-Python">A Crash Course in Python<a class="anchor-link" href="#A-Crash-Course-in-Python">¶</a></h2>
 </div>
 </div>
 </div>
